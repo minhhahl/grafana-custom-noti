@@ -69,9 +69,9 @@ Pip (if you would like to use virtualenv)
 - Login Grafana UI at [http://localhost:3000](http://localhost:3000) with username `admin` and password `admin`
 
 - Setup a notification channel with these information:
- - Type: `Webhook`
- - URL: `http://host.docker.internal:5000/grafana` (Running with docker-compose)
- - Optional Webhook settings:
-  - Http Method: `POST`
-  - Username: `grafana`
-  - Password: `grafana`
+  - Type: `Webhook`
+  - URL: `http://host.docker.internal:5000/grafana` (Running with docker-compose)
+  - Optional Webhook settings:
+    - Http Method: `POST`
+    - Username: `grafana`
+    - Password: `grafana`
