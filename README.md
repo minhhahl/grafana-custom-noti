@@ -2,8 +2,8 @@
 
 ## Requirements
 
-Python 3 (python 3.9 is used for develop environment)
-Pip (if you would like to use virtualenv)
+- Python 3 (python 3.9 is used for develop environment)
+- Pip (if you would like to use virtualenv)
 
 ## Preparing environment
 
