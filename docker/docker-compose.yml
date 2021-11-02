@@ -17,6 +17,6 @@ services:
     container_name: grafana
     image: grafana/grafana:8.1.5
     ports:
-      - '3000:3000'
+      - 3000:3000
     volumes:
       - ./data/grafana:/var/lib/grafana
