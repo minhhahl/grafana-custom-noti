@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  grafana-custom-noti:
+    container_name: grafana-custom-noti
+    image: grafana-custom-noti:0.1
+    environment:
+      - SMS_ENDPOINT=http://127.0.0.2:8009/sendsms
+      - SMS_BRANDNAME=KLE
+      - SMS_RECIEVERS=098456;098123
+      - AUTH_USERNAME=grafana
+      - AUTH_PASSWORD=grafana
+    ports:
+      - 5000:5000
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:8.1.5
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./data/grafana:/var/lib/grafana
